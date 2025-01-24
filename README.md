@@ -36,8 +36,7 @@ SympTech's Smart Health Assistant uses advanced AI to help you predict symptoms,
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/gagan8605/Techsaksham_Implementation-of-ML-model-for-image-classification.git
-   cd Implementation-of-ML-model-for-image-classification
+   git clone  
 2. **Create and activate a virtual environment**:
     ```bash
     python -m venv venv
