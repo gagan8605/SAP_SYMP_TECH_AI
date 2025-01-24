@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Recommendation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Medicine Recommendation</h1>
+        <p class="subtitle">Provide a symptom or use voice input to get a recommendation.</p>
+        
+        <div class="input-section">
+            <!-- Dropdown for selecting a symptom -->
+            <select id="symptomSelect" class="input-field">
+                <option value="">Select a common symptom</option>
+                <option value="headache">Headache</option>
+                <option value="fever">Fever</option>
+                <option value="nausea">Nausea</option>
+                <option value="cough">Cough</option>
+                <option value="fatigue">Fatigue</option>
+                <option value="chest pain">Chest Pain</option>
+                <option value="sore throat">Sore Throat</option>
+                <option value="dizziness">Dizziness</option>
+                <option value="stomach ache">Stomach Ache</option>
+                <option value="cold">Cold</option>
+                <option value="diarrhea">Diarrhea</option>
+                <option value="vomiting">Vomiting</option>
+                <option value="back pain">Back Pain</option>
+                <option value="muscle pain">Muscle Pain</option>
+                <option value="joint pain">Joint Pain</option>
+                <option value="itching">Itching</option>
+                <option value="rash">Rash</option>
+                <option value="chills">Chills</option>
+                <option value="sweating">Excessive Sweating</option>
+                <option value="shortness of breath">Shortness of Breath</option>
+                <option value="swelling">Swelling</option>
+                <option value="painful urination">Painful Urination</option>
+                <option value="frequent urination">Frequent Urination</option>
+                <option value="blood in urine">Blood in Urine</option>
+                <option value="weight loss">Unexplained Weight Loss</option>
+                <option value="weight gain">Unexplained Weight Gain</option>
+                <option value="loss of appetite">Loss of Appetite</option>
+                <option value="abdominal pain">Abdominal Pain</option>
+                <option value="diabetic symptoms">Diabetic Symptoms</option>
+                <option value="insomnia">Insomnia</option>
+                <option value="anxiety">Anxiety</option>
+                <option value="depression">Depression</option>
+                <option value="memory loss">Memory Loss</option>
+                <option value="mood swings">Mood Swings</option>
+                <option value="confusion">Confusion</option>
+                <option value="fainting">Fainting</option>
+                <option value="shaking">Shaking or Tremors</option>
+                <option value="numbness">Numbness</option>
+                <option value="tingling">Tingling Sensation</option>
+                <option value="blurred vision">Blurred Vision</option>
+                <option value="double vision">Double Vision</option>
+                <option value="eye pain">Eye Pain</option>
+                <option value="ear pain">Ear Pain</option>
+                <option value="hearing loss">Hearing Loss</option>
+                <option value="ringing in ears">Ringing in Ears</option>
+                <option value="tooth pain">Tooth Pain</option>
+                <option value="gum swelling">Gum Swelling</option>
+                <option value="bloody stool">Bloody Stool</option>
+                <option value="black stool">Black Stool</option>
+                <option value="skin discoloration">Skin Discoloration</option>
+                <option value="coughing up blood">Coughing Up Blood</option>
+                <option value="bloody sputum">Bloody Sputum</option>
+                <option value="hoarseness">Hoarseness</option>
+                <option value="swollen lymph nodes">Swollen Lymph Nodes</option>
+                <option value="hives">Hives</option>
+                <option value="cold sweats">Cold Sweats</option>
+                <option value="throat pain">Throat Pain</option>
+                <option value="difficulty swallowing">Difficulty Swallowing</option>
+                <option value="dry mouth">Dry Mouth</option>
+                <option value="dry skin">Dry Skin</option>
+                <option value="hair loss">Hair Loss</option>
+                <option value="increased hunger">Increased Hunger</option>
+                <option value="increased thirst">Increased Thirst</option>
+                <option value="excessive urination">Excessive Urination</option>
+                <option value="feeling hot">Feeling Hot</option>
+                <option value="feeling cold">Feeling Cold</option>
+                <option value="night sweats">Night Sweats</option>
+                <option value="irregular heartbeat">Irregular Heartbeat</option>
+                <option value="chest tightness">Chest Tightness</option>
+                <option value="high blood pressure">High Blood Pressure</option>
+                <option value="low blood pressure">Low Blood Pressure</option>
+                <option value="high blood sugar">High Blood Sugar</option>
+                <option value="low blood sugar">Low Blood Sugar</option>
+                <option value="nausea after eating">Nausea after Eating</option>
+                <option value="pale skin">Pale Skin</option>
+                <option value="yellow skin">Yellow Skin</option>
+                <option value="severe headache">Severe Headache</option>
+                <option value="migraines">Migraines</option>
+                <option value="persistent cough">Persistent Cough</option>
+                <option value="persistent fever">Persistent Fever</option>
+                <option value="nosebleed">Nosebleed</option>
+                <option value="loss of consciousness">Loss of Consciousness</option>
+                <option value="sensitivity to light">Sensitivity to Light</option>
+                <option value="night blindness">Night Blindness</option>
+                <option value="vision loss">Vision Loss</option>
+                <option value="skin peeling">Skin Peeling</option>
+                <option value="severe abdominal pain">Severe Abdominal Pain</option>
+                <option value="chronic diarrhea">Chronic Diarrhea</option>
+                <option value="stomach bloating">Stomach Bloating</option>
+                <option value="gas">Excessive Gas</option>
+                <option value="hiccups">Hiccups</option>
+                <option value="frequent sneezing">Frequent Sneezing</option>
+                <option value="allergic reaction">Allergic Reaction</option>
+                <option value="burning sensation">Burning Sensation</option>
+                <option value="swollen feet">Swollen Feet</option>
+                <option value="swollen hands">Swollen Hands</option>
+                <option value="muscle weakness">Muscle Weakness</option>
+                <option value="skin ulcer">Skin Ulcer</option>
+                <option value="swollen belly">Swollen Belly</option>
+                <option value="thick mucus">Thick Mucus</option>
+                <option value="heavy breathing">Heavy Breathing</option>
+                <option value="joint stiffness">Joint Stiffness</option>
+                <option value="muscle cramping">Muscle Cramping</option>
+                <option value="urine retention">Urine Retention</option>
+            </select>
+            
+            <!-- Input for custom symptom -->
+            <input type="text" id="symptomInput" class="input-field" placeholder="Enter your symptom">
+            
+            <!-- Button to use voice input -->
+            <button id="voiceBtn" class="button">Use Voice Input</button>
+        </div>
+        
+        <button id="recommendBtn" class="button">Get Medicine Recommendation</button>
+
+        <!-- Processing Indicator -->
+        <div id="processingIndicator" class="processing-indicator" style="display: none;">Processing...</div>
+
+        <!-- Result will appear here in paragraph format -->
+        <div id="resultSection" class="result-paragraph" style="display: none;">
+            <div id="resultParagraph"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>

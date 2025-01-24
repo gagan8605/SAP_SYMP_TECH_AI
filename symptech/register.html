@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="registerForm">
+            <h1>Register</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <p class="redirect">Already have an account? <a href="login.html">Login here</a>.</p>
+        </form>
+    </div>
+
+    <script>
+        // Select the register form and button
+        const registerForm = document.getElementById('registerForm');
+
+        // Handle form submission
+        registerForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // You can add validation here if needed
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            // Check if passwords match
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return;
+            }
+
+            // If everything is valid, redirect to dashboard
+            window.location.href = 'health_profile.html';
+        });
+    </script>
+</body>
+</html>

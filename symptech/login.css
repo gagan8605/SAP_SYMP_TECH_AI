@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to top left, #f0f8ff, #84c8dc);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    animation: gradientAnimation 15s ease-in-out infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to top left, #f0f8ff, #84c8dc);
+    }
+    50% {
+        background: linear-gradient(to top left, #d3e5f7, #6b8fa6);
+    }
+    100% {
+        background: linear-gradient(to top left, #f0f8ff, #84c8dc);
+    }
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    animation: containerAnimation 1s ease-out forwards;
+}
+
+@keyframes containerAnimation {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+    outline: none;
+    transform: scale(1.02);
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #2575fc;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: #6a11cb;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.redirect {
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+.redirect a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.redirect a:hover {
+    color: #6a11cb;
+    text-decoration: underline;
+}

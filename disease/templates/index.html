@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disease Prediction from Image</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <div class="translator-container">
+      <span>Translate:</span>
+      <div id="google_translate_element"></div>
+  </div>
+
+  <div class="container">
+    <h1>Disease Prediction from Image</h1>
+    <p>Upload or capture an image for analysis.</p>
+    <div class="upload-section">
+      <label for="file-upload" class="upload-button">Upload Medical Image</label>
+      <input id="file-upload" type="file" accept="image/png, image/jpeg" hidden>
+      <button id="camera-button" class="camera-button">Open Camera</button>
+    </div>
+    <div id="image-preview"></div>
+    <button id="analyze-button" class="analyze-button" disabled>Analyze Image</button>
+    <div id="result-section"> RESULT SECTION</div>
+  </div>
+
+  <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,es,fr,de,hi,kn,gu,bn,mr,zh,ja,ru,it,pt',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+  </script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="/static/script.js"></script>
+
+</body>
+</html>

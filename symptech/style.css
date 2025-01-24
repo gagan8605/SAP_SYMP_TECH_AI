@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: -1px;
+  text-decoration: none;
+ scroll-behavior: smooth;
+ 
+}
+header {
+  /* border: 2px solid; */
+  width: 99.5%;
+  height: 60px;
+  /* border-radius: 5px; */
+  padding: 0%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #123258;;
+  
+}
+header .box1 {
+  /* border: 2px solid; */
+  width: 10%;
+  height: 55px;
+  margin:auto;
+
+}
+header .box1 img{
+  background-size: cover;
+  margin-top: 3%;
+
+}
+.red {
+  color: red;
+  
+}
+
+
+/* header .box1 img {
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+} */
+header .box2 {
+  /* border: 2px solid; */
+  width: 50%;
+  height: 55px;
+  margin: auto;
+  justify-content: center;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+header .box2 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header .box2 ul li {
+  justify-content: center;
+  padding: 15px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 700px;
+}
+header .box3 {
+  /* border: 2px solid; */
+  width: 15%;
+  height: 55px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+header .box3 .button {
+  background-color:skyblue;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}
+header .box2 ul li:hover {
+  transform: scale(1.2); /* Slight zoom effect */
+  text-decoration: underline; /* Underline on hover */
+  text-decoration-color: red; /* Green underline color */
+  /* background-color: lightgray; */
+  /* border-radius: 15px; */
+}
+/* -------------------------------------------------section1------------------------------------- */
+
+.color-bg {
+  /* border: 2px solid; */
+  width: 99.5%;
+  height: 550px;
+  margin: auto;
+  background-color: #123258;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+
+
+}
+.color-bg .left-box{
+  /* border: 2px solid red; */
+  width: 700px;
+  height: 350px;
+  margin-left: 5%;
+
+}
+.color-bg .right-box{
+  /* border: 2px solid red; */
+  width: 500px;
+  height: 300px;
+  margin-top: 8%;
+  margin-right: 5%
+  
+}
+.color-bg .right-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* -------------------------------------------------------------------------section 2--------------------- */
+
+
+.parent-content-box{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  /* background-color:aliceblue ; */
+}
+.left-content-box{
+  /* border: 2px solid red; */
+  width: 800px;
+  height: 830px;
+  margin-top: -3%;
+  margin-left: 1%;
+  /* box-shadow: 5px 5px 15px rgba(0, 0, 0.5, 0.5); */
+
+}
+.left-content-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 10px; */
+}
+.left-content-box img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
+}
+
+.right-content-box{
+  /* border: 2px solid green; */
+  width: 600px;
+  height: 500px;
+  margin-top: 10%;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  
+}
+/* -------------------------------------------------section 3-------------------------------------- */
+.parent-box-1{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  /* background-color:aliceblue ; */
+}
+
+
+.left-box-1{
+  /* border: 2px solid red; */
+  width: 700px;
+  height: 700px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.parent-box-1 .right-box-1{
+  /* border: 2px solid red; */
+  width: 400px;
+  height: 500px;
+  margin-top: 11%;
+  margin-right: 4%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0.5, 0.5);
+}
+.right-box-1:hover{
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
+}
+.parent-box-1 .right-box-1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+/* -----------------------------------------------team section----------------------------------------- */
+
+.team-members{
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      /* background-color:aliceblue ; */
+  }
+  .team .team-members .Vishal{
+      /* border: 2px solid red; */
+      width: 300px;
+      height: 400px;
+      margin-top: 150px;
+  }
+  .team .team-members .Vishal p{
+      font-size: 20px; color:rgb(96, 105, 123); box-sizing: border-box; word-spacing: normal !important; font-family: Arial, Helvetica, sans-serif; line-height: 1.2; text-align: center;
+
+  }
+  .team .team-members .Vishal h2{
+      font-size: 20px; color: black; box-sizing: border-box; word-spacing: normal !important; font-family: Arial, Helvetica, sans-serif;  text-align: center; margin-top: 4%;
+  }
+  
+  .team .team-members .Vishal .photos{
+      /* border: 2px solid; */
+      width: 75%;
+      height: 212px;
+      margin: auto;
+      border-radius: 50%;
+  }
+  .team .team-members .Vishal .photos img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+  }
+  .team .team-members .Vishal .icons{
+      display: flex;
+      /* border: 2px solid; */
+      justify-content: space-between;
+      margin: auto;
+      margin-top: 5%;
+      width: 40%;
+      height: 25px;
+
+      
+      
+  }
+  .team .team-members .Vishal .icons img{
+   width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+  }
+  .team .team-members .Vishal .icons img:hover{
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
+    }
+
+    /* ------------------------------------------------contact section----------------------------------- */
+    .contact-form-container {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 800px; /* Increased width of the main box */
+      height: auto; /* Allow height to adjust based on content */
+      box-sizing: border-box;
+      margin: auto;
+      /* background-color:aliceblue ; */
+  }
+  
+  .contact-form-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #123258; /* Medium dark blue */
+  }
+  
+  form label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333333;
+      font-weight: bold;
+  }
+  
+  form input,
+  form textarea {
+      width: 100%;
+      padding: 12px; /* Increased padding for larger fields */
+      margin-bottom: 20px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+      outline: none;
+      border-color: #123258;
+      box-shadow: 0 0 5px rgba(18, 50, 88, 0.5);
+  }
+  
+  form button {
+      background-color: #123258;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 15px; /* Increased padding for larger button */
+      font-size: 18px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+      background-color: #0f2b47;
+  }
+  .img{
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: -150px;
+    
+  }
+
+  #google_translate_element {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.goog-te-gadget {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.goog-te-banner-frame {
+  display: none !important; /* Hides the top banner */
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+min-width: 220px;
+top: 100%;
+left: 0;
+z-index: 1000;
+}
+
+.dropdown-content a {
+color: black;
+padding: 10px 15px;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.sl{
+color: white;
+}
+
+  /* ---------------------------------------------------------------footer---------------------------------------- */
+
+

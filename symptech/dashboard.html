@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Improved Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr,de,hi,kn,gu,bn,mr,zh,ja,ru,it,pt',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <style>
+        .translator-container {
+            position: absolute;
+            right: 80px;
+            top: 10px;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .translator-container span {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .goog-te-gadget img {
+            display: none !important;
+        }
+        .goog-te-gadget {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+        .goog-te-banner-frame.skiptranslate, .goog-te-balloon-frame.skiptranslate {
+            display: none !important;
+        }
+        body {
+            top: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="home-icon">
+            <img src="/symptech/images/home-icon.png" alt="Home" class="icon">
+            <span>My Dashboard</span>
+        </div>
+        <div class="right-header">
+            <div class="profile-container">
+                <button class="profile-icon">
+                    <img src="/symptech/images/profile-icon.webp" alt="Profile">
+                </button>
+                <div class="profile-menu">
+                    <p>Email: symp@tech.com</p>
+                    <p>Username:symptech</p>
+                    <p>Account ID: 8605</p>
+                    <button class="sign-out" onclick="window.location.href='index1.html';">
+                        Sign Out
+                    </button>
+                </div>
+            </div>
+            <div class="translator-container">
+                <span>Translate:</span>
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="checker">
+        <div class="left-box">
+            <h1 style="text-align: center;">Analyze Skin Disease Using Image</h1>
+            <button class="btn" onclick="window.location.href='http://127.0.0.1:5003/';">Check Now</button>
+            <button class="btn" onclick="findDermatologist()">Find Dermatologist Near You</button>
+        </div>
+        <div class="right-box">
+            <h1 style="text-align: center;">Disease Prediction On Symptom</h1>
+            <button class="btn" onclick="window.location.href='http://127.0.0.1:5001/';">Check Now</button>
+            <button class="btn" onclick="knowDoctors()">Know Doctors Near You</button>
+        </div>
+    </div>
+
+    <div class="center-box">
+        <h1 style="text-align: center;">Medicine Recommendation By Symptom</h1>
+        <button class="btn" onclick="window.location.href='http://127.0.0.1:5002/';">Check Now</button>
+        <button class="btn" onclick="knowChemists()">Know Chemists Near You</button>
+    </div>
+
+    <div class="disclaimer-box">
+        <h3>Disclaimer</h3>
+        <p>
+            The predictions provided by this AI-based skin disease prediction tool are for informational purposes only and are not a substitute for professional medical advice, diagnosis, or treatment. While we strive for accuracy, the AI system may occasionally produce incorrect or incomplete results. Please consult a qualified healthcare professional for an accurate diagnosis and appropriate medical care. Use this tool responsibly and at your own discretion.
+        </p>
+    </div>
+
+    <script>
+        function findDermatologist() {
+            window.open('https://www.google.com/maps/search/dermatologists+near+me', '_blank');
+        }
+        
+        function knowDoctors() {
+            window.open('https://www.google.com/maps/search/doctors+near+me', '_blank');
+        }
+        
+        function knowChemists() {
+            window.open('https://www.google.com/maps/search/chemists+near+me', '_blank');
+        }
+    </script>
+</body>
+</html>
