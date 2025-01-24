@@ -57,9 +57,8 @@ SympTech's Smart Health Assistant uses advanced AI to help you predict symptoms,
   
 ### GUI 
 - ![image](https://github.com/user-attachments/assets/805a8645-385d-4030-be61-b9dd623a6f20)
+- ![image](https://github.com/user-attachments/assets/1abb6a32-f66c-4d15-b724-9b4b8b03efa7)
   
-- ![image](https://github.com/user-attachments/assets/8cfd8cf8-ff2e-479a-9e1c-5a47bd7448a5)
-
 - ![image](https://github.com/user-attachments/assets/733812ed-7535-4dc1-9ebe-c6260464a480)
   
 - ![image](https://github.com/user-attachments/assets/e69e149b-e86f-4d2b-b67b-9e9007d8494c)
